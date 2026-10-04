@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+evaluation/
+logs/
+.git/
+.env
+README.md
+.gitignore
+.gitattributes
+.env.example
+docker-compose.yml

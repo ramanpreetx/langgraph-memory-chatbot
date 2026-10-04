@@ -1,0 +1,172 @@
+[
+  {
+    "conversation_id": "2c9e2ea8-86bf-4caf-a23c-737da229dd4b",
+    "user_messages": [
+      "today I'm going to make a chatbot which has long term memory and as well as short term memory. short term memory will stay in one convo, and LTM will be in every convo.",
+      "created a chatbot.py is it correct?         from typing import TypedDict, Annotated\nfrom langchain_core.messages import BaseMessage\nfrom langchain_groq import ChatGroq\nfrom langgraph.graph import StateGraph, START, END\nfrom langgraph.graph.message import add_messages\nfrom langgraph.checkpoint.sqlite import SqliteSaver\nfrom dotenv import load_dotenv\nimport sqlite3\nfrom pathlib import Path\n\nload_dotenv()\n\nclass State(TypedDict):\n    messages: Annotated[list[BaseMessage], add_messages]\n\n\nllm = ChatGroq(model=\"llama-3.1-8b-instant\")\n\n\ndef chat(state: State) -> State:\n\n    messages = state[\"messages\"]\n\n    response = llm.invoke(messages)\n\n    return {\"messages\": [response]}\n\n\ndef create_chatbot():\n\n    checkpointer = SqliteSaver(conn)\n\n    graph = StateGraph(State)\n\n    graph.add_node(\"chat\", chat)\n    graph.add_edge(START, \"chat\")\n    graph.add_edge(\"chat\", END)\n\n    chatbot = graph.compile(checkpointer=checkpointer)\n\n    return chatbot\n",
+      "i want to use Postgres instead of SQLite. what exactly to change in my code.  don't give whole code just changes only",
+      "ok i made the changes, what exactly to do after chatbot.py?",
+      "how to add ltm should i create a separate file? what functions to create there? don't give code just idea"
+    ]
+  },
+  {
+    "conversation_id": "335539a8-817c-4515-b97b-8d32877c5023",
+    "user_messages": [
+      "my goal is to become Ai engineer. which skills do i need exactly?",
+      "give me the most important ones? not everything",
+      "do i need langgraph & langchain?",
+      "i want to strengthen my fundamentals of scikit learn and Pytorch by the end of this year",
+      "i don't want to waste too much of time on it. so, make a broad plan "
+    ]
+  },
+  {
+    "conversation_id": "34d1d5b5-95b6-4566-b921-0586abd21eb2",
+    "user_messages": [
+      "I'm learning Pytorch can u explain what is AutoGrad",
+      "a = 7 b= a**2 and c =sin(b) calculate grad",
+      "i don't get it can you calculate it step by step and explain each step",
+      "what is clamp in pytorch?",
+      "create a MLP using pytorch"
+    ]
+  },
+  {
+    "conversation_id": "793ced1e-dc08-4d98-be58-cdd9eeb5abdc",
+    "user_messages": [
+      "what exactly is docker? ",
+      "basically, pack my code in a container and send on any machine and it will run same as on other machine",
+      "I'm currently learning docker. can u tell me more about it? what i can do with it exactly?",
+      "what is the most common usage of docker ?",
+      "how to containerize the application with it step by step? "
+    ]
+  },
+  {
+    "conversation_id": "7e0b9b33-ffb9-42ab-9b88-cd964384e7ae",
+    "user_messages": [
+      "What is kv cache",
+      "I got it what it is, but can u explain it how it works step by step. please always explain things in detail and depth. ",
+      "did we only use it for inference? why not in training?",
+      "did all new models use kv cache?",
+      "ok"
+    ]
+  },
+  {
+    "conversation_id": "be3a9b55-bd66-45d7-bf18-fa161aa41029",
+    "user_messages": [
+      "hello, my name is raman",
+      "i want to buy phone under 20000rs but I'm confused which to buy. what requirement should i look for?",
+      "Snapdragon 8s gen 3 vs dimensity 8400 ultra",
+      "i already have a laptop which has rtx 2050 gpu in it. it is Lenovo ",
+      "which games i can play in my laptop easily?"
+    ]
+  },
+  {
+    "conversation_id": "c18220a6-ba2e-4c95-95d7-0d549f0a610c",
+    "user_messages": [
+      "how to use fast api in my app?",
+      "how to use with langgraph",
+      "i want to use fast api from now on in my every application",
+      "i built a chatbot using langgraph is there anyway i can use fast api in it?",
+      "ok"
+    ]
+  },
+  {
+    "conversation_id": "d4bd6d31-9147-4258-85ac-46e77872180c",
+    "user_messages": [
+      "What is maximum likelihood function",
+      "I don't get it did I learned it anywhere? ",
+      "How does it fit with dl or ml ",
+      "Basically, find the parameter value that explains my data well",
+      "thanks"
+    ]
+  },
+  {
+    "conversation_id": "decb6ee2-72e0-4d61-bb4e-17d7565025f5",
+    "user_messages": [
+      "i build a medical rag chatbot using Lang chain. i also evaluated it end to end",
+      "the chunks that get retrieved has source citation in metadata but i didn't reference in Ans",
+      "i used Medline plus for data. i web scraped all pages in sitemap",
+      "why is it difficult to get data for evaluation",
+      "how do i know how much data i need for evaluation? should i go for quantity or quality?"
+    ]
+  },
+  {
+    "conversation_id": "eab1b3ea-c23d-4307-98e1-ae0483c6c3cd",
+    "user_messages": [
+      "explain the decoder architecture in depth",
+      "what is Multi‑Head Attention in short",
+      "explain positional encoding?",
+      "in short",
+      "why need residual connections?"
+    ]
+  },
+  {
+  "conversation_id": "f11c8a71-e001-4634-27b5-ahe7475bf7ac",
+  "user_messages": [
+    "I'm thinking of building a RAG system for legal documents.",
+    "I want to make this chatbot extraordinary",
+    "I will use FAISS first.",
+    "what evaluation should i do for retrieval?",
+    "should i evaluate reranker?"
+  ]
+  },
+  {
+    "conversation_id": "f11c8a71-1002-4d61-bd4ee474ndg9",
+    "user_messages": [
+      "my exams are next week.",
+      "where to start from?",
+      "what is cloud computing?",
+      "explain SaaS",
+      "thanks"
+    ]
+  },
+  {
+    "conversation_id": "f11c8a71-1007-enu4-udhyrn5m3h6m",
+    "user_messages": [
+      "i finally finished my BERT implementation.",
+      "this took way longer than i expected.",
+      "before implementing MLM & NSP can u explain how they work?",
+      "explain this in depth use examples too",
+      "i got it"
+    ]
+  },
+  {
+    "conversation_id": "a91f7d21-2c41-4b8e-91a2-10en3ma50021",
+    "user_messages": [
+      "i want to use an embedding model",
+      "i want simple small model",
+      "is this even a good model",
+      "give me list of the models.",
+      "create a namespace"
+    ]
+  },
+  {
+    "conversation_id": "a91f7d21-2c41-4b8e-91a2-3jdye393e026",
+    "user_messages": [
+      "what are tools in langcahin",
+      "how they work?",
+      "it's basically a python function",
+      "create a weather tool",
+      "where do i get api for it?"
+    ]
+  },
+  {
+    "conversation_id": "371a14eb-d695-4b8b-9797-b57cc3de710d",
+    "user_messages": [
+      "today goal is to implement short term memory and long-term memory in my chatbot.  where exactly should i implement STM and how.",
+      "how this works?",
+      "where exactly is stm stored and how it is fetched?",
+      "instead of in memory store i want a database",
+      "excellent"
+    ]
+  },
+  {
+    "conversation_id": "380b3c30-8c85-4094-a629-589ac178b6ce",
+    "user_messages": [
+      "is there any issue in this code   from typing import TypedDict, Annotated \nfrom langchain_core.messages import BaseMessage, RemoveMessage \nfrom langchain_groq import ChatGroq \nfrom langgraph.graph import StateGraph, START, END, MessagesState \nfrom langgraph.graph.message import add_messages \nfrom langgraph.checkpoint.postgres import PostgresSaver \nfrom prompt import PROMPT, PROMPT1 \nfrom dotenv import load_dotenv \nimport os \nimport psycopg \n \nload_dotenv() \n \nDB_URI = os.getenv(\"POSTGRES_URI\") \n \nclass State(MessagesState): \n    summary: str \n \n \nllm = ChatGroq(model=\"openai/gpt-oss-120b\") \n \ndef summary(state: State) -> State: \n    messages = state[\"messages\"] \n \n    if len(messages) <= 10: \n        return {} \n \n    old_messages = messages[:6] \n \n    old_text = \"\\n\".join( \n        f\"{messages.type}: {messages.content}\" \n        for messages in old_message \n        ) \n \n    existing_summary = state[\"summary\"] \n \n    if existing_summary: \n        prompt = PROMPT \n \n    else: \n        prompt = PROMPT1 \n \n    summary = llm.invoke(prompt) \n \n    return {\"summary\": summary.content, \"messages\": [RemoveMessage(id=messages.id) for messages in old_messages]} \n \n \ndef chat(state: State) -> State: \n \n    messages = state[\"messages\"] \n \n    response = llm.invoke(messages) \n \n    return {\"messages\": [response]} \n \n \ndef create_chatbot(): \n \n    conn = psycopg.connect(DB_URI, autocommit=True) \n \n    checkpointer = PostgresSaver(conn) \n \n    checkpointer.setup() \n \n    graph = StateGraph(State) \n \n    graph.add_node(\"chat\", chat) \n    graph.add_node(\"summarize\", summary) \n    graph.add_edge(START, \"chat\") \n    graph.add_edge(\"chat\", \"summarize\") \n    graph.add_edge(\"summarize\", END) \n \n    chatbot = graph.compile(checkpointer=checkpointer) \n \n    return chatbot \n",
+      "what exactly you changed in the code",
+      "whenever u give me fixes just point exactly to those fixes don't give whole code as a one fix",
+      "i want SQLite instead of Postgres",
+      "how it works and how it differs than Postgres?"
+    ]
+  }
+]

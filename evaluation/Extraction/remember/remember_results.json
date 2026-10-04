@@ -1,0 +1,322 @@
+[
+  {
+    "case": 1,
+    "input": "Remember that I prefer PyTorch over TensorFlow.",
+    "expected": [
+      {
+        "memory": "User prefers PyTorch over TensorFlow.",
+        "type": "preference"
+      }
+    ],
+    "generated": [
+      {
+        "memory": "User prefers PyTorch over TensorFlow.",
+        "type": "preference"
+      }
+    ]
+  },
+  {
+    "case": 2,
+    "input": "Please remember that I like explanations with step-by-step reasoning.",
+    "expected": [
+      {
+        "memory": "User prefers step-by-step explanations.",
+        "type": "preference"
+      }
+    ],
+    "generated": [
+      {
+        "memory": "User prefers explanations with step-by-step reasoning.",
+        "type": "preference"
+      }
+    ]
+  },
+  {
+    "case": 3,
+    "input": "Remember, I prefer working with Python for my machine learning projects.",
+    "expected": [
+      {
+        "memory": "User prefers Python for machine learning projects.",
+        "type": "preference"
+      }
+    ],
+    "generated": [
+      {
+        "memory": "User prefers working with Python for machine learning projects.",
+        "type": "preference"
+      }
+    ]
+  },
+  {
+    "case": 4,
+    "input": "Can you remember that I don't like overly complicated solutions?",
+    "expected": [
+      {
+        "memory": "User prefers simple solutions and dislikes unnecessary complexity.",
+        "type": "preference"
+      }
+    ],
+    "generated": [
+      {
+        "memory": "User doesn't like overly complicated solutions.",
+        "type": "preference"
+      }
+    ]
+  },
+  {
+    "case": 5,
+    "input": "Remember that I prefer concise answers unless I specifically ask for a deep explanation.",
+    "expected": [
+      {
+        "memory": "User prefers concise answers unless they ask for a detailed explanation.",
+        "type": "preference"
+      }
+    ],
+    "generated": [
+      {
+        "memory": "User prefers concise answers unless specifically asked for a deep explanation.",
+        "type": "preference"
+      }
+    ]
+  },
+  {
+    "case": 6,
+    "input": "Remember that my goal is to get an ML internship.",
+    "expected": [
+      {
+        "memory": "User's goal is to get an ML internship.",
+        "type": "goal"
+      }
+    ],
+    "generated": [
+      {
+        "memory": "User's goal is to get an ML internship.",
+        "type": "goal"
+      }
+    ]
+  },
+  {
+    "case": 7,
+    "input": "Please remember that I want to become an AI engineer.",
+    "expected": [
+      {
+        "memory": "User wants to become an AI engineer.",
+        "type": "goal"
+      }
+    ],
+    "generated": [
+      {
+        "memory": "User's goal is to become an AI engineer.",
+        "type": "goal"
+      }
+    ]
+  },
+  {
+    "case": 8,
+    "input": "Remember that I want to improve my deep learning skills this year.",
+    "expected": [
+      {
+        "memory": "User's goal is to improve their deep learning skills.",
+        "type": "goal"
+      }
+    ],
+    "generated": [
+      {
+        "memory": "User's goal is to improve deep learning skills this year.",
+        "type": "goal"
+      }
+    ]
+  },
+  {
+    "case": 9,
+    "input": "Remember this: I want to build strong NLP and LLM projects for my portfolio.",
+    "expected": [
+      {
+        "memory": "User wants to build strong NLP and LLM projects for their portfolio.",
+        "type": "goal"
+      }
+    ],
+    "generated": [
+      {
+        "memory": "User wants to build strong NLP and LLM projects for their portfolio.",
+        "type": "goal"
+      }
+    ]
+  },
+  {
+    "case": 10,
+    "input": "Remember that I'm building BERT from scratch using PyTorch.",
+    "expected": [
+      {
+        "memory": "User is building BERT from scratch using PyTorch.",
+        "type": "project"
+      }
+    ],
+    "generated": [
+      {
+        "memory": "User's project is building BERT from scratch using PyTorch.",
+        "type": "project"
+      }
+    ]
+  },
+  {
+    "case": 11,
+    "input": "Please remember that my current project is a medical RAG chatbot.",
+    "expected": [
+      {
+        "memory": "User is working on a medical RAG chatbot.",
+        "type": "project"
+      }
+    ],
+    "generated": [
+      {
+        "memory": "User's project is a medical RAG chatbot.",
+        "type": "project"
+      }
+    ]
+  },
+  {
+    "case": 12,
+    "input": "Remember that I'm working on a LangGraph chatbot with long-term and short-term memory.",
+    "expected": [
+      {
+        "memory": "User is working on a LangGraph chatbot with long-term and short-term memory.",
+        "type": "project"
+      }
+    ],
+    "generated": [
+      {
+        "memory": "User's project is a LangGraph chatbot with long-term and short-term memory.",
+        "type": "project"
+      }
+    ]
+  },
+  {
+    "case": 13,
+    "input": "Remember that I'm implementing a Transformer from scratch in PyTorch.",
+    "expected": [
+      {
+        "memory": "User is implementing a Transformer from scratch in PyTorch.",
+        "type": "project"
+      }
+    ],
+    "generated": [
+      {
+        "memory": "User is implementing a Transformer from scratch in PyTorch.",
+        "type": "project"
+      }
+    ]
+  },
+  {
+    "case": 14,
+    "input": "Remember that I'm a final-year B.Tech student studying AI and machine learning.",
+    "expected": [
+      {
+        "memory": "User is a final-year B.Tech student studying AI and machine learning.",
+        "type": "fact"
+      }
+    ],
+    "generated": [
+      {
+        "memory": "User is a final-year B.Tech student studying AI and machine learning.",
+        "type": "fact"
+      }
+    ]
+  },
+  {
+    "case": 15,
+    "input": "Please remember that I use an RTX 2050 laptop GPU.",
+    "expected": [
+      {
+        "memory": "User uses an RTX 2050 laptop GPU.",
+        "type": "fact"
+      }
+    ],
+    "generated": [
+      {
+        "memory": "User uses an RTX 2050 laptop GPU",
+        "type": "fact"
+      }
+    ]
+  },
+  {
+    "case": 16,
+    "input": "Remember that I usually code using Python 3.10.",
+    "expected": [
+      {
+        "memory": "User usually codes using Python 3.10.",
+        "type": "fact"
+      }
+    ],
+    "generated": [
+      {
+        "memory": "User prefers to code using Python 3.10.",
+        "type": "preference"
+      }
+    ]
+  },
+  {
+    "case": 17,
+    "input": "Remember that I have already implemented a Transformer from scratch.",
+    "expected": [
+      {
+        "memory": "User has already implemented a Transformer from scratch.",
+        "type": "fact"
+      }
+    ],
+    "generated": [
+      {
+        "memory": "User has already implemented a Transformer from scratch.",
+        "type": "fact"
+      }
+    ]
+  },
+  {
+    "case": 18,
+    "input": "Remember to explain what attention is when we discuss Transformers.",
+    "expected": [],
+    "generated": []
+  },
+  {
+    "case": 19,
+    "input": "Remember to show me the code for this later.",
+    "expected": [],
+    "generated": []
+  },
+  {
+    "case": 20,
+    "input": "Remember to explain the difference between BERT and GPT.",
+    "expected": [],
+    "generated": []
+  },
+  {
+    "case": 21,
+    "input": "Remember to explain this concept in simple terms.",
+    "expected": [],
+    "generated": []
+  },
+  {
+    "case": 22,
+    "input": "Remember to continue from where we left off tomorrow.",
+    "expected": [],
+    "generated": []
+  },
+  {
+    "case": 23,
+    "input": "Remember to help me debug this error later.",
+    "expected": [],
+    "generated": []
+  },
+  {
+    "case": 24,
+    "input": "Remember to compare these two models for me.",
+    "expected": [],
+    "generated": []
+  },
+  {
+    "case": 25,
+    "input": "Remember to tell me how BERT pretraining works.",
+    "expected": [],
+    "generated": []
+  }
+]

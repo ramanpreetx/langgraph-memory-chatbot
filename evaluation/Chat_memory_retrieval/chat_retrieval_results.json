@@ -1,0 +1,912 @@
+{
+  "cases": [
+    {
+      "case": "positive_001",
+      "text": "I'm making breakfast and can't decide what to drink.",
+      "expected": [
+        "memory_001"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_001",
+          "score": 0.44019911049609795
+        },
+        {
+          "memory_id": "memory_022",
+          "score": 0.2704922556877136
+        },
+        {
+          "memory_id": "memory_012",
+          "score": 0.23983025550842285
+        },
+        {
+          "memory_id": "memory_027",
+          "score": 0.2142913767273058
+        },
+        {
+          "memory_id": "memory_005",
+          "score": 0.19853854179382324
+        }
+      ]
+    },
+    {
+      "case": "positive_002",
+      "text": "I finally have some time to plan my trip for next spring.",
+      "expected": [
+        "memory_010"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_010",
+          "score": 0.4783928096294403
+        },
+        {
+          "memory_id": "memory_020",
+          "score": 0.21389726441792445
+        },
+        {
+          "memory_id": "memory_012",
+          "score": 0.15282200276851654
+        },
+        {
+          "memory_id": "memory_028",
+          "score": 0.14885535836219788
+        },
+        {
+          "memory_id": "memory_002",
+          "score": 0.1329706907272339
+        }
+      ]
+    },
+    {
+      "case": "positive_003",
+      "text": "I've been sitting around too much lately. I really need to get moving again. should i start running?",
+      "expected": [
+        "memory_003"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_003",
+          "score": 0.2810274828092749
+        },
+        {
+          "memory_id": "memory_023",
+          "score": 0.24821233749389826
+        },
+        {
+          "memory_id": "memory_020",
+          "score": 0.17152714772765176
+        },
+        {
+          "memory_id": "memory_008",
+          "score": 0.1278264300719758
+        },
+        {
+          "memory_id": "memory_007",
+          "score": 0.06906502027094608
+        }
+      ]
+    },
+    {
+      "case": "positive_004",
+      "text": "I'm heading out for dinner tonight and have no idea what to order.",
+      "expected": [
+        "memory_005",
+        "memory_022"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_012",
+          "score": 0.2646239995956421
+        },
+        {
+          "memory_id": "memory_022",
+          "score": 0.2361452877521515
+        },
+        {
+          "memory_id": "memory_001",
+          "score": 0.13715433256898346
+        },
+        {
+          "memory_id": "memory_005",
+          "score": 0.11469798535108566
+        },
+        {
+          "memory_id": "memory_021",
+          "score": 0.09782823499104631
+        }
+      ]
+    },
+    {
+      "case": "positive_005",
+      "text": "My phone is getting pretty old. I'm thinking it's time for a new one.",
+      "expected": [
+        "memory_015"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_015",
+          "score": 0.4049103912764562
+        },
+        {
+          "memory_id": "memory_016",
+          "score": 0.19392556620531487
+        },
+        {
+          "memory_id": "memory_029",
+          "score": 0.16041174052918794
+        },
+        {
+          "memory_id": "memory_028",
+          "score": 0.1460503103703078
+        },
+        {
+          "memory_id": "memory_009",
+          "score": 0.14168221205194997
+        }
+      ]
+    },
+    {
+      "case": "positive_006",
+      "text": "I keep opening social media whenever I get bored. It's getting ridiculous.",
+      "expected": [
+        "memory_016"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_016",
+          "score": 0.5211090730959739
+        },
+        {
+          "memory_id": "memory_007",
+          "score": 0.32991351663550894
+        },
+        {
+          "memory_id": "memory_029",
+          "score": 0.29699564865218564
+        },
+        {
+          "memory_id": "memory_017",
+          "score": 0.28662176648508164
+        },
+        {
+          "memory_id": "memory_025",
+          "score": 0.21111510694026947
+        }
+      ]
+    },
+    {
+      "case": "positive_007",
+      "text": "I've always wanted to learn guitar but never actually started.",
+      "expected": [
+        "memory_019"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_019",
+          "score": 0.6237267704335725
+        },
+        {
+          "memory_id": "memory_002",
+          "score": 0.15886374361135136
+        },
+        {
+          "memory_id": "memory_024",
+          "score": 0.13905085455765076
+        },
+        {
+          "memory_id": "memory_023",
+          "score": 0.1316701761877327
+        },
+        {
+          "memory_id": "memory_004",
+          "score": 0.13014106391178804
+        }
+      ]
+    },
+    {
+      "case": "positive_008",
+      "text": "I have a presentation coming up and I'm already nervous about speaking in front of everyone.",
+      "expected": [
+        "memory_011"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_011",
+          "score": 0.49934008733270474
+        },
+        {
+          "memory_id": "memory_010",
+          "score": 0.10293241108269635
+        },
+        {
+          "memory_id": "memory_024",
+          "score": 0.0992749155864272
+        },
+        {
+          "memory_id": "memory_008",
+          "score": 0.09823295048082537
+        },
+        {
+          "memory_id": "memory_004",
+          "score": 0.07324508012919195
+        }
+      ]
+    },
+    {
+      "case": "positive_009",
+      "text": "I'm trying to fix my sleep schedule because staying up so late isn't working anymore.",
+      "expected": [
+        "memory_027"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_027",
+          "score": 0.6784658836404028
+        },
+        {
+          "memory_id": "memory_018",
+          "score": 0.4251084327697754
+        },
+        {
+          "memory_id": "memory_003",
+          "score": 0.3111039400100708
+        },
+        {
+          "memory_id": "memory_012",
+          "score": 0.2667965888977051
+        },
+        {
+          "memory_id": "memory_016",
+          "score": 0.2633414707576356
+        }
+      ]
+    },
+    {
+      "case": "positive_010",
+      "text": "I'm thinking about starting a little side business but don't know where to begin.",
+      "expected": [
+        "memory_021"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_021",
+          "score": 0.5013439354877596
+        },
+        {
+          "memory_id": "memory_014",
+          "score": 0.24353520649251859
+        },
+        {
+          "memory_id": "memory_012",
+          "score": 0.18737571314718082
+        },
+        {
+          "memory_id": "memory_024",
+          "score": 0.15242769987252958
+        },
+        {
+          "memory_id": "memory_006",
+          "score": 0.15114237056465496
+        }
+      ]
+    },
+    {
+      "case": "positive_011",
+      "text": "I'm going on a trip and I'm wondering if I should just take the train instead of flying.",
+      "expected": [
+        "memory_020"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_020",
+          "score": 0.6652233798868474
+        },
+        {
+          "memory_id": "memory_010",
+          "score": 0.22204890847206116
+        },
+        {
+          "memory_id": "memory_002",
+          "score": 0.2112211287021637
+        },
+        {
+          "memory_id": "memory_028",
+          "score": 0.1581059992313385
+        },
+        {
+          "memory_id": "memory_023",
+          "score": 0.15602838063070923
+        }
+      ]
+    },
+    {
+      "case": "positive_012",
+      "text": "I want to get better at photography but I'm not sure what I should practice first.",
+      "expected": [
+        "memory_029"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_029",
+          "score": 0.41368044655562797
+        },
+        {
+          "memory_id": "memory_023",
+          "score": 0.19864744254067923
+        },
+        {
+          "memory_id": "memory_011",
+          "score": 0.14489057422988827
+        },
+        {
+          "memory_id": "memory_019",
+          "score": 0.14065842982182353
+        },
+        {
+          "memory_id": "memory_021",
+          "score": 0.10463345293600002
+        }
+      ]
+    },
+    {
+      "case": "positive_013",
+      "text": "I need to buy some clothes soon, but I don't want to end up buying a bunch of cheap stuff I'll never wear.",
+      "expected": [
+        "memory_030"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_030",
+          "score": 0.6213755567111575
+        },
+        {
+          "memory_id": "memory_006",
+          "score": 0.206680148839952
+        },
+        {
+          "memory_id": "memory_021",
+          "score": 0.20581685269970906
+        },
+        {
+          "memory_id": "memory_001",
+          "score": 0.07507315278053339
+        },
+        {
+          "memory_id": "memory_015",
+          "score": 0.06974635688938846
+        }
+      ]
+    },
+    {
+      "case": "positive_014",
+      "text": "I'm looking for an online course to learn digital marketing.",
+      "expected": [
+        "memory_024"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_024",
+          "score": 0.7750632435007997
+        },
+        {
+          "memory_id": "memory_014",
+          "score": 0.32679664173166256
+        },
+        {
+          "memory_id": "memory_021",
+          "score": 0.3008073030458749
+        },
+        {
+          "memory_id": "memory_019",
+          "score": 0.16713986788512858
+        },
+        {
+          "memory_id": "memory_006",
+          "score": 0.1407798956894999
+        }
+      ]
+    },
+    {
+      "case": "positive_015",
+      "text": "I haven't visited my parents in a while and I feel like I should make some time for them.",
+      "expected": [
+        "memory_028"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_028",
+          "score": 0.6048755285218054
+        },
+        {
+          "memory_id": "memory_020",
+          "score": 0.18609359305818174
+        },
+        {
+          "memory_id": "memory_010",
+          "score": 0.1817421804820195
+        },
+        {
+          "memory_id": "memory_008",
+          "score": 0.1527832655439817
+        },
+        {
+          "memory_id": "memory_012",
+          "score": 0.1317364792980864
+        }
+      ]
+    },
+    {
+      "case": "borderline_001",
+      "text": "got nothing planned for the weekend, any ideas?",
+      "expected": [
+        "memory_007",
+        "memory_017",
+        "memory_029"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_007",
+          "score": 0.2485707550389029
+        },
+        {
+          "memory_id": "memory_012",
+          "score": 0.2091679871082306
+        },
+        {
+          "memory_id": "memory_027",
+          "score": 0.17531378122054253
+        },
+        {
+          "memory_id": "memory_008",
+          "score": 0.13174325227737427
+        },
+        {
+          "memory_id": "memory_010",
+          "score": 0.12738937139511108
+        }
+      ]
+    },
+    {
+      "case": "borderline_002",
+      "text": "thinking of getting back into reading, any good books?",
+      "expected": [
+        "memory_017"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_017",
+          "score": 0.4090169017921039
+        },
+        {
+          "memory_id": "memory_025",
+          "score": 0.12373023480176926
+        },
+        {
+          "memory_id": "memory_020",
+          "score": 0.10989166378652049
+        },
+        {
+          "memory_id": "memory_010",
+          "score": 0.10335023701190948
+        },
+        {
+          "memory_id": "memory_014",
+          "score": 0.1015416919266171
+        }
+      ]
+    },
+    {
+      "case": "borderline_003",
+      "text": "where do you usually go when you really need to get some work done?",
+      "expected": [
+        "memory_008"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_008",
+          "score": 0.4175440619912192
+        },
+        {
+          "memory_id": "memory_012",
+          "score": 0.22555141005226476
+        },
+        {
+          "memory_id": "memory_018",
+          "score": 0.19517518253178523
+        },
+        {
+          "memory_id": "memory_010",
+          "score": 0.1741910233611481
+        },
+        {
+          "memory_id": "memory_003",
+          "score": 0.16803346085747872
+        }
+      ]
+    },
+    {
+      "case": "borderline_004",
+      "text": "i should probably start exercising again. what would you suggest?",
+      "expected": [
+        "memory_003",
+        "memory_023"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_023",
+          "score": 0.382601297938747
+        },
+        {
+          "memory_id": "memory_007",
+          "score": 0.11998535662802223
+        },
+        {
+          "memory_id": "memory_003",
+          "score": 0.11303141713142395
+        },
+        {
+          "memory_id": "memory_020",
+          "score": 0.1077509703561953
+        },
+        {
+          "memory_id": "memory_015",
+          "score": 0.10691405832767487
+        }
+      ]
+    },
+    {
+      "case": "borderline_005",
+      "text": "need something to watch tonight, got any suggestions?",
+      "expected": [
+        "memory_025"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_025",
+          "score": 0.2556501030921936
+        },
+        {
+          "memory_id": "memory_007",
+          "score": 0.23390102290517267
+        },
+        {
+          "memory_id": "memory_017",
+          "score": 0.17538985165297127
+        },
+        {
+          "memory_id": "memory_029",
+          "score": 0.09065804900700003
+        },
+        {
+          "memory_id": "memory_018",
+          "score": 0.09013719856739044
+        }
+      ]
+    },
+    {
+      "case": "borderline_006",
+      "text": "my weekdays feel pretty unorganized lately, any way to make them easier?",
+      "expected": [
+        "memory_012",
+        "memory_018"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_012",
+          "score": 0.42610435797028345
+        },
+        {
+          "memory_id": "memory_007",
+          "score": 0.2906746788039234
+        },
+        {
+          "memory_id": "memory_003",
+          "score": 0.2619179799458975
+        },
+        {
+          "memory_id": "memory_027",
+          "score": 0.20222539345480128
+        },
+        {
+          "memory_id": "memory_008",
+          "score": 0.19217895772206417
+        }
+      ]
+    },
+    {
+      "case": "borderline_007",
+      "text": "might start learning a language, which one should i try?",
+      "expected": [
+        "memory_002"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_002",
+          "score": 0.37192821502685547
+        },
+        {
+          "memory_id": "memory_011",
+          "score": 0.2112854616301716
+        },
+        {
+          "memory_id": "memory_019",
+          "score": 0.20171140422157063
+        },
+        {
+          "memory_id": "memory_017",
+          "score": 0.16570777688668858
+        },
+        {
+          "memory_id": "memory_024",
+          "score": 0.1518360285856709
+        }
+      ]
+    },
+    {
+      "case": "borderline_008",
+      "text": "i've been wanting to buy something expensive but i'm not sure if i should yet",
+      "expected": [
+        "memory_006"
+      ],
+      "retrieved": [
+        {
+          "memory_id": "memory_030",
+          "score": 0.33863228606870366
+        },
+        {
+          "memory_id": "memory_006",
+          "score": 0.2883467674255391
+        },
+        {
+          "memory_id": "memory_021",
+          "score": 0.21087755496039995
+        },
+        {
+          "memory_id": "memory_010",
+          "score": 0.14923944468733363
+        },
+        {
+          "memory_id": "memory_019",
+          "score": 0.13058602809906095
+        }
+      ]
+    },
+    {
+      "case": "negative_001",
+      "text": "Can you help me figure out why my laptop keeps getting hot?",
+      "expected": [],
+      "retrieved": [
+        {
+          "memory_id": "memory_030",
+          "score": 0.12243312962153952
+        },
+        {
+          "memory_id": "memory_016",
+          "score": 0.10614678376038189
+        },
+        {
+          "memory_id": "memory_022",
+          "score": 0.10049593448638916
+        },
+        {
+          "memory_id": "memory_029",
+          "score": 0.09491178676223122
+        },
+        {
+          "memory_id": "memory_012",
+          "score": 0.08080702275037766
+        }
+      ]
+    },
+    {
+      "case": "negative_002",
+      "text": "my phone keeps freezing randomly, any idea why?",
+      "expected": [],
+      "retrieved": [
+        {
+          "memory_id": "memory_015",
+          "score": 0.1202217343317431
+        },
+        {
+          "memory_id": "memory_029",
+          "score": 0.115130614783448
+        },
+        {
+          "memory_id": "memory_013",
+          "score": 0.0897452107223744
+        },
+        {
+          "memory_id": "memory_016",
+          "score": 0.08914719949398042
+        },
+        {
+          "memory_id": "memory_018",
+          "score": 0.06760716035323389
+        }
+      ]
+    },
+    {
+      "case": "negative_003",
+      "text": "How do I make my internet connection more stable?",
+      "expected": [],
+      "retrieved": [
+        {
+          "memory_id": "memory_016",
+          "score": 0.21760936922999208
+        },
+        {
+          "memory_id": "memory_023",
+          "score": 0.1694523939653525
+        },
+        {
+          "memory_id": "memory_007",
+          "score": 0.10243288598354638
+        },
+        {
+          "memory_id": "memory_018",
+          "score": 0.1005168289100179
+        },
+        {
+          "memory_id": "memory_029",
+          "score": 0.0934077556972358
+        }
+      ]
+    },
+    {
+      "case": "negative_004",
+      "text": "I'm trying to organize all the files on my computer and it's a complete mess.",
+      "expected": [],
+      "retrieved": [
+        {
+          "memory_id": "memory_016",
+          "score": 0.11351574888919469
+        },
+        {
+          "memory_id": "memory_014",
+          "score": 0.08994559734735619
+        },
+        {
+          "memory_id": "memory_030",
+          "score": 0.05849357075893469
+        },
+        {
+          "memory_id": "memory_024",
+          "score": 0.04896370613358736
+        },
+        {
+          "memory_id": "memory_029",
+          "score": 0.03444953403614981
+        }
+      ]
+    },
+    {
+      "case": "negative_005",
+      "text": "I have an exam coming up and I don't know how to study for it efficiently.",
+      "expected": [],
+      "retrieved": [
+        {
+          "memory_id": "memory_014",
+          "score": 0.32449833604703393
+        },
+        {
+          "memory_id": "memory_024",
+          "score": 0.18965462209852835
+        },
+        {
+          "memory_id": "memory_019",
+          "score": 0.17139755657925893
+        },
+        {
+          "memory_id": "memory_017",
+          "score": 0.16399867320052852
+        },
+        {
+          "memory_id": "memory_027",
+          "score": 0.14501745373114694
+        }
+      ]
+    },
+    {
+      "case": "negative_006",
+      "text": "I'm looking for a good way to clean my room faster.",
+      "expected": [],
+      "retrieved": [
+        {
+          "memory_id": "memory_016",
+          "score": 0.18099184745598784
+        },
+        {
+          "memory_id": "memory_008",
+          "score": 0.1748543381690979
+        },
+        {
+          "memory_id": "memory_027",
+          "score": 0.1633109994716051
+        },
+        {
+          "memory_id": "memory_003",
+          "score": 0.15479668974876404
+        },
+        {
+          "memory_id": "memory_030",
+          "score": 0.14904895869043355
+        }
+      ]
+    },
+    {
+      "case": "negative_007",
+      "text": "My headphones stopped working on one side. Any idea what could be wrong?",
+      "expected": [],
+      "retrieved": [
+        {
+          "memory_id": "memory_015",
+          "score": 0.1162605807185173
+        },
+        {
+          "memory_id": "memory_018",
+          "score": 0.07756247371435165
+        },
+        {
+          "memory_id": "memory_008",
+          "score": 0.0736187994480133
+        },
+        {
+          "memory_id": "memory_013",
+          "score": 0.058144088834524155
+        },
+        {
+          "memory_id": "memory_019",
+          "score": 0.04880780063225032
+        }
+      ]
+    }
+  ],
+  "threshold_evaluation": [
+    {
+      "threshold": 0.1,
+      "positive_recall": 1.0,
+      "negative_false_positive_rate": 1.0
+    },
+    {
+      "threshold": 0.15,
+      "positive_recall": 0.938,
+      "negative_false_positive_rate": 0.429
+    },
+    {
+      "threshold": 0.2,
+      "positive_recall": 0.938,
+      "negative_false_positive_rate": 0.286
+    },
+    {
+      "threshold": 0.25,
+      "positive_recall": 0.875,
+      "negative_false_positive_rate": 0.143
+    },
+    {
+      "threshold": 0.3,
+      "positive_recall": 0.812,
+      "negative_false_positive_rate": 0.143
+    },
+    {
+      "threshold": 0.35,
+      "positive_recall": 0.812,
+      "negative_false_positive_rate": 0.0
+    },
+    {
+      "threshold": 0.4,
+      "positive_recall": 0.812,
+      "negative_false_positive_rate": 0.0
+    },
+    {
+      "threshold": 0.45,
+      "positive_recall": 0.625,
+      "negative_false_positive_rate": 0.0
+    },
+    {
+      "threshold": 0.5,
+      "positive_recall": 0.5,
+      "negative_false_positive_rate": 0.0
+    }
+  ]
+}

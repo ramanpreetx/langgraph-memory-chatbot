@@ -1,0 +1,557 @@
+{
+    "case_001": {
+        "candidate": "User is learning computer vision.",
+        "existing_memories": [
+            {
+                "id": "memory_011",
+                "text": "User uses PyTorch for deep learning projects."
+            },
+            {
+                "id": "memory_028",
+                "text": "User is a BSc AI & ML student."
+            },
+            {
+                "id": "memory_004",
+                "text": "User built an English-French Transformer from scratch."
+            },
+            {
+                "id": "memory_003",
+                "text": "User built a medical RAG chatbot."
+            },
+            {
+                "id": "memory_030",
+                "text": "User wants an AI engineering job."
+            }
+        ],
+        "expected_action": "ADD"
+    },
+
+    "case_002": {
+        "candidate": "User is learning Docker.",
+        "existing_memories": [
+            {
+                "id": "memory_002",
+                "text": "User is running PostgreSQL in Docker for the chatbot."
+            },
+            {
+                "id": "memory_001",
+                "text": "User is building a chatbot with long-term memory and short-term memory."
+            },
+            {
+                "id": "memory_024",
+                "text": "User is considering FastAPI for AI applications."
+            },
+            {
+                "id": "memory_005",
+                "text": "User wants to learn things that are useful for actual AI engineering work."
+            },
+            {
+                "id": "memory_029",
+                "text": "User is looking for AI/ML internships."
+            }
+        ],
+        "expected_action": "ADD"
+    },
+
+    "case_003": {
+        "candidate": "User is interested in deploying AI applications.",
+        "existing_memories": [
+            {
+                "id": "memory_024",
+                "text": "User is considering FastAPI for AI applications."
+            },
+            {
+                "id": "memory_025",
+                "text": "User is considering MCP for AI engineering."
+            },
+            {
+                "id": "memory_005",
+                "text": "User wants to learn things that are useful for actual AI engineering work."
+            },
+            {
+                "id": "memory_030",
+                "text": "User wants an AI engineering job."
+            },
+            {
+                "id": "memory_003",
+                "text": "User built a medical RAG chatbot."
+            }
+        ],
+        "expected_action": "ADD"
+    },
+
+    "case_004": {
+        "candidate": "User wants to learn model serving and deployment.",
+        "existing_memories": [
+            {
+                "id": "memory_005",
+                "text": "User wants to learn things that are useful for actual AI engineering work."
+            },
+            {
+                "id": "memory_030",
+                "text": "User wants an AI engineering job."
+            },
+            {
+                "id": "memory_024",
+                "text": "User is considering FastAPI for AI applications."
+            },
+            {
+                "id": "memory_025",
+                "text": "User is considering MCP for AI engineering."
+            },
+            {
+                "id": "memory_003",
+                "text": "User built a medical RAG chatbot."
+            }
+        ],
+        "expected_action": "ADD"
+    },
+
+    "case_005": {
+        "candidate": "User is interested in improving their Python skills.",
+        "existing_memories": [
+            {
+                "id": "memory_011",
+                "text": "User uses PyTorch for deep learning projects."
+            },
+            {
+                "id": "memory_027",
+                "text": "User wants exact changes when debugging code."
+            },
+            {
+                "id": "memory_005",
+                "text": "User wants to learn things that are useful for actual AI engineering work."
+            },
+            {
+                "id": "memory_021",
+                "text": "User wants simple explanations without losing technical depth."
+            },
+            {
+                "id": "memory_014",
+                "text": "User prefers practical over theoretical explanations."
+            }
+        ],
+        "expected_action": "ADD"
+    },
+
+    "case_006": {
+        "candidate": "User prefers practical explanations rather than theoretical ones.",
+        "existing_memories": [
+            {
+                "id": "memory_014",
+                "text": "User prefers practical over theoretical explanations."
+            },
+            {
+                "id": "memory_021",
+                "text": "User wants simple explanations without losing technical depth."
+            },
+            {
+                "id": "memory_018",
+                "text": "User prefers explanations with examples."
+            },
+            {
+                "id": "memory_013",
+                "text": "User wants reasons before implementation."
+            },
+            {
+                "id": "memory_009",
+                "text": "User prefers practical explanations."
+            }
+        ],
+        "expected_action": "NOOP",
+        "expected_memory_id": "memory_014"
+    },
+
+    "case_007": {
+        "candidate": "User prefers one clear solution instead of multiple approaches.",
+        "existing_memories": [
+            {
+                "id": "memory_007",
+                "text": "User prefers one clear implementation approach instead of several competing architectures."
+            },
+            {
+                "id": "memory_015",
+                "text": "User prefers one solution over multiple alternatives."
+            },
+            {
+                "id": "memory_013",
+                "text": "User wants reasons before implementation."
+            },
+            {
+                "id": "memory_027",
+                "text": "User wants exact changes when debugging code."
+            },
+            {
+                "id": "memory_021",
+                "text": "User wants simple explanations without losing technical depth."
+            }
+        ],
+        "expected_action": "NOOP",
+        "expected_memory_id": ["memory_015", "memory_007"]
+    },
+
+    "case_008": {
+        "candidate": "User likes explanations with examples.",
+        "existing_memories": [
+            {
+                "id": "memory_018",
+                "text": "User prefers explanations with examples."
+            },
+            {
+                "id": "memory_021",
+                "text": "User wants simple explanations without losing technical depth."
+            },
+            {
+                "id": "memory_014",
+                "text": "User prefers practical over theoretical explanations."
+            },
+            {
+                "id": "memory_013",
+                "text": "User wants reasons before implementation."
+            },
+            {
+                "id": "memory_009",
+                "text": "User prefers practical explanations."
+            }
+        ],
+        "expected_action": "NOOP",
+        "expected_memory_id": "memory_018"
+    },
+
+    "case_009": {
+        "candidate": "User wants reasons before implementation.",
+        "existing_memories": [
+            {
+                "id": "memory_013",
+                "text": "User wants reasons before implementation."
+            },
+            {
+                "id": "memory_027",
+                "text": "User wants exact changes when debugging code."
+            },
+            {
+                "id": "memory_021",
+                "text": "User wants simple explanations without losing technical depth."
+            },
+            {
+                "id": "memory_014",
+                "text": "User prefers practical over theoretical explanations."
+            },
+            {
+                "id": "memory_018",
+                "text": "User prefers explanations with examples."
+            }
+        ],
+        "expected_action": "NOOP",
+        "expected_memory_id": "memory_013"
+    },
+
+    "case_010": {
+        "candidate": "User wants simple explanations without sacrificing technical depth.",
+        "existing_memories": [
+            {
+                "id": "memory_021",
+                "text": "User wants simple explanations without losing technical depth."
+            },
+            {
+                "id": "memory_009",
+                "text": "User prefers practical explanations."
+            },
+            {
+                "id": "memory_018",
+                "text": "User prefers explanations with examples."
+            },
+            {
+                "id": "memory_017",
+                "text": "User prefers technical depth without too much theory."
+            },
+            {
+                "id": "memory_013",
+                "text": "User wants reasons before implementation."
+            }
+        ],
+        "expected_action": "NOOP",
+        "expected_memory_id": "memory_021"
+    },
+
+
+    "case_011": {
+        "candidate": "User is using PostgreSQL for the chatbot.",
+        "existing_memories": [
+            {
+                "id": "memory_101",
+                "text": "User is using SQLite for their chatbot."
+            },
+            {
+                "id": "memory_001",
+                "text": "User is building a chatbot with long-term memory and short-term memory."
+            },
+            {
+                "id": "memory_005",
+                "text": "User wants to learn things that are useful for actual AI engineering work."
+            },
+            {
+                "id": "memory_027",
+                "text": "User wants exact changes when debugging code."
+            },
+            {
+                "id": "memory_021",
+                "text": "User wants simple explanations without losing technical depth."
+            }
+        ],
+        "expected_action": "UPDATE",
+        "expected_memory_id": "memory_101"
+    },
+
+    "case_012": {
+        "candidate": "User prefers PyTorch over TensorFlow for deep learning.",
+        "existing_memories": [
+            {
+                "id": "memory_025",
+                "text": "User prefers TensorFlow for deep learning projects."
+            },
+            {
+                "id": "memory_011",
+                "text": "User uses PyTorch for deep learning projects."
+            },
+            {
+                "id": "memory_004",
+                "text": "User built an English-French Transformer from scratch."
+            },
+            {
+                "id": "memory_003",
+                "text": "User built a medical RAG chatbot."
+            },
+            {
+                "id": "memory_005",
+                "text": "User wants to learn things that are useful for actual AI engineering work."
+            }
+        ],
+        "expected_action": "UPDATE",
+        "expected_memory_id": "memory_025"
+    },
+
+    "case_013": {
+        "candidate": "User is now looking for an AI engineering job instead of internship",
+        "existing_memories": [
+            {
+                "id": "memory_029",
+                "text": "User is looking for AI/ML internships."
+            },
+            {
+                "id": "memory_030",
+                "text": "User is learning FastAPI to deploy their own applications"
+            },
+            {
+                "id": "memory_005",
+                "text": "User wants to learn things that are useful for actual AI engineering work."
+            },
+            {
+                "id": "memory_024",
+                "text": "User is considering FastAPI for AI applications."
+            },
+            {
+                "id": "memory_025",
+                "text": "User is considering MCP for AI engineering."
+            }
+        ],
+        "expected_action": "UPDATE",
+        "expected_memory_id": "memory_029"
+    },
+
+    "case_014": {
+        "candidate": "User lives in Punjab, India.",
+        "existing_memories": [
+            {
+                "id": "memory_110",
+                "text": "User lives in India."
+            },
+            {
+                "id": "memory_028",
+                "text": "User is a BSc AI & ML student."
+            },
+            {
+                "id": "memory_030",
+                "text": "User wants an AI engineering job."
+            },
+            {
+                "id": "memory_029",
+                "text": "User is looking for AI/ML internships."
+            },
+            {
+                "id": "memory_005",
+                "text": "User wants to learn things that are useful for actual AI engineering work."
+            }
+        ],
+        "expected_action": "UPDATE",
+        "expected_memory_id": "memory_110"
+    },
+
+    "case_015": {
+        "candidate": "User name is Ramanpreet Singh",
+        "existing_memories": [
+            {
+                "id": "memory_002",
+                "text": "User name is Aman."
+            },
+            {
+                "id": "memory_028",
+                "text": "User is a BSc AI & ML student."
+            },
+            {
+                "id": "memory_030",
+                "text": "User wants an AI engineering job."
+            },
+            {
+                "id": "memory_011",
+                "text": "User uses PyTorch for deep learning projects."
+            },
+            {
+                "id": "memory_027",
+                "text": "User wants exact changes when debugging code."
+            }
+        ],
+        "expected_action": "UPDATE",
+        "expected_memory_id": "memory_002"
+    },
+
+    "case_016": {
+        "candidate": "User cancelled their driving lessons.",
+        "existing_memories": [
+            {
+                "id": "memory_020",
+                "text": "User is taking driving lessons."
+            },
+            {
+                "id": "memory_018",
+                "text": "User plays football regularly."
+            },
+            {
+                "id": "memory_019",
+                "text": "User has a music streaming subscription."
+            },
+            {
+                "id": "memory_022",
+                "text": "User is learning MCP."
+            },
+            {
+                "id": "memory_030",
+                "text": "User wants an AI engineering job."
+            }
+        ],
+        "expected_action": "DELETE",
+        "expected_memory_id": "memory_020"
+    },
+
+    "case_017": {
+        "candidate": "User was learning MCP but doesn't study it anymore.",
+        "existing_memories": [
+            {
+                "id": "memory_022",
+                "text": "User is learning MCP."
+            },
+            {
+                "id": "memory_025",
+                "text": "User is considering MCP for AI engineering."
+            },
+            {
+                "id": "memory_024",
+                "text": "User is considering FastAPI for AI applications."
+            },
+            {
+                "id": "memory_005",
+                "text": "User wants to learn things that are useful for actual AI engineering work."
+            },
+            {
+                "id": "memory_030",
+                "text": "User wants an AI engineering job."
+            }
+        ],
+        "expected_action": "DELETE",
+        "expected_memory_id": "memory_022"
+    },
+
+    "case_018": {
+        "candidate": "User cancelled their music subscription.",
+        "existing_memories": [
+            {
+                "id": "memory_019",
+                "text": "User has a music streaming subscription."
+            },
+            {
+                "id": "memory_020",
+                "text": "User is taking driving lessons."
+            },
+            {
+                "id": "memory_018",
+                "text": "User plays football regularly."
+            },
+            {
+                "id": "memory_022",
+                "text": "User is learning MCP."
+            },
+            {
+                "id": "memory_028",
+                "text": "User is a BSc AI & ML student."
+            }
+        ],
+        "expected_action": "DELETE",
+        "expected_memory_id": "memory_019"
+    },
+
+    "case_019": {
+        "candidate": "User stopped playing football.",
+        "existing_memories": [
+            {
+                "id": "memory_018",
+                "text": "User plays football regularly."
+            },
+            {
+                "id": "memory_014",
+                "text": "User plays cricket matches every Sunday."
+            },
+            {
+                "id": "memory_020",
+                "text": "User is taking driving lessons."
+            },
+            {
+                "id": "memory_019",
+                "text": "User has a music streaming subscription."
+            },
+            {
+                "id": "memory_022",
+                "text": "User is learning MCP."
+            }
+        ],
+        "expected_action": "DELETE",
+        "expected_memory_id": "memory_018"
+    },
+
+    "case_020": {
+        "candidate": "User is no longer working at the restaurant.",
+        "existing_memories": [
+            {
+                "id": "memory_019",
+                "text": "User works at a restaurant."
+            },
+            {
+                "id": "memory_020",
+                "text": "User is taking driving lessons."
+            },
+            {
+                "id": "memory_018",
+                "text": "User plays football regularly."
+            },
+            {
+                "id": "memory_022",
+                "text": "User is learning MCP."
+            },
+            {
+                "id": "memory_030",
+                "text": "User wants an AI engineering job."
+            }
+        ],
+        "expected_action": "DELETE",
+        "expected_memory_id": "memory_019"
+    }
+}

@@ -1,0 +1,202 @@
+{
+  "case_001": {
+    "conversation": [
+      "remember that I like to keep my projects simple"
+    ],
+    "expected_memories": [
+      {
+        "operation": "ADD",
+        "expected_memory_id": null
+      }
+    ]
+  },
+  "case_002": {
+    "conversation": [
+      "remember that I usually write down things in my own words when I'm learning"
+    ],
+    "expected_memories": [
+      {
+        "operation": "ADD",
+        "expected_memory_id": null
+      }
+    ]
+  },
+  "case_003": {
+    "conversation": [
+      "remember that I prefer working on existing projects instead of constantly starting new ones"
+    ],
+    "expected_memories": [
+      {
+        "operation": "ADD",
+        "expected_memory_id": null
+      }
+    ]
+  },
+  "case_004": {
+    "conversation": [
+      "remember that I'm focusing on deployment skills for my AI projects"
+    ],
+    "expected_memories": [
+      {
+        "operation": "ADD",
+        "expected_memory_id": null
+      }
+    ]
+  },
+  "case_005": {
+    "conversation": [
+      "remember that I've switched the chatbot from postgres to sqlite"
+    ],
+    "expected_memories": [
+      {
+        "operation": "UPDATE",
+        "expected_memory_id": "memory_002"
+      }
+    ]
+  },
+  "case_006": {
+    "conversation": [
+      "remember that I'm using tensorflow for my deep learning work from now on"
+    ],
+    "expected_memories": [
+      {
+        "operation": "UPDATE",
+        "expected_memory_id": "memory_005"
+      }
+    ]
+  },
+  "case_007": {
+    "conversation": [
+      "remember that I want to see a few approaches when there's an actual tradeoff"
+    ],
+    "expected_memories": [
+      {
+        "operation": "UPDATE",
+        "expected_memory_id": "memory_004"
+      }
+    ]
+  },
+  "case_008": {
+    "conversation": [
+      "remember that I want explanations to include the theory as well as the practical side"
+    ],
+    "expected_memories": [
+      {
+        "operation": "UPDATE",
+        "expected_memory_id": "memory_001"
+      }
+    ]
+  },
+  "case_009": {
+    "conversation": [
+      "remember that I use postgres for my chatbot"
+    ],
+    "expected_memories": [
+      {
+        "operation": "NOOP",
+        "expected_memory_id": "memory_002"
+      }
+    ]
+  },
+  "case_010": {
+    "conversation": [
+      "remember that I'm already using pytorch for my deep learning projects"
+    ],
+    "expected_memories": [
+      {
+        "operation": "NOOP",
+        "expected_memory_id": "memory_005"
+      }
+    ]
+  },
+  "case_011": {
+    "conversation": [
+      "remember that I'm building the chatbot with langgraph"
+    ],
+    "expected_memories": [
+      {
+        "operation": "NOOP",
+        "expected_memory_id": "memory_006"
+      }
+    ]
+  },
+  "case_012": {
+    "conversation": [
+      "remember that I use streamlit for my AI apps"
+    ],
+    "expected_memories": [
+      {
+        "operation": "NOOP",
+        "expected_memory_id": "memory_013"
+      }
+    ]
+  },
+  "case_013": {
+    "conversation": [
+      "remember that I don't want to use postgres for the chatbot anymore"
+    ],
+    "expected_memories": [
+      {
+        "operation": "DELETE",
+        "expected_memory_id": "memory_002"
+      }
+    ]
+  },
+  "case_014": {
+    "conversation": [
+      "remember that I'm not learning fastapi anymore"
+    ],
+    "expected_memories": [
+      {
+        "operation": "DELETE",
+        "expected_memory_id": "memory_012"
+      }
+    ]
+  },
+  "case_015": {
+    "conversation": [
+      "remember that I'm no longer interested in llm evaluation"
+    ],
+    "expected_memories": [
+      {
+        "operation": "DELETE",
+        "expected_memory_id": "memory_011"
+      }
+    ]
+  },
+  "case_016": {
+    "conversation": [
+      "remember that I stopped learning langchain and langgraph"
+    ],
+    "expected_memories": [
+      {
+        "operation": "DELETE",
+        "expected_memory_id": "memory_010"
+      }
+    ]
+  },
+  "case_017": {
+    "conversation": [
+      "remember that I'm working on this bug today"
+    ],
+    "expected_memories": []
+  },
+  "case_018": {
+    "conversation": [
+      "I'm using this approach for now, remember that"
+    ],
+    "expected_memories": []
+  },
+  "case_019": {
+    "conversation": [
+      "do you remember the bug we were fixing yestarday"
+    ],
+    "expected_memories": []
+  },
+  "case_020": {
+    "conversation": [
+      "I remember having this problem but i can't be able to remeber it"
+    ],
+    "expected_memories": []
+  }
+}

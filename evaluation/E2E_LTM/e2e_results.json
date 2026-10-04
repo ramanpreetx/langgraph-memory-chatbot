@@ -1,0 +1,1048 @@
+{
+  "automatic": {
+    "case_001": {
+      "conversation": [
+        "can you explain backprop",
+        "less math more just how it actually works",
+        "yeah that's way better",
+        "now explain the whole derivation thing",
+        "cool that makes sense now"
+      ],
+      "expected_memories": []
+    },
+    "case_002": {
+      "conversation": [
+        "how should I structure this function  def process_messages(messages): if not messages: return results = [] for message in messages: if message.type == 'human': result = extract_memory(message.content) if result: results.append(result) save_memories(results) return results",
+        "there's a few ways to do it huh",
+        "just pick one, I don't need the whole list",
+        "yeah that's what I want",
+        "nice thanks"
+      ],
+      "expected_memories": []
+    },
+    "case_003": {
+      "conversation": [
+        "what's a decorator in python",
+        "ok but can you show me one",
+        "just make it click for me way more",
+        "gotcha that helps",
+        "got another example of that maybe"
+      ],
+      "expected_memories": []
+    },
+    "case_004": {
+      "conversation": [
+        "I'm using streamlit for this one",
+        "I want a separate page",
+        "can streamlit handle that",
+        "oh nice I didn't know it could do that",
+        "yeah I'll keep it in streamlit"
+      ],
+      "expected_memories": []
+    },
+    "case_005": {
+      "conversation": [
+        "do you think I should keep notes while learning something or is that a waste of time",
+        "I never remember half the stuff I read anyway",
+        "I've started writing down things in my own words instead",
+        "takes a little longer but I actually remember it later",
+        "probably gonna keep doing that"
+      ],
+      "expected_memories": [
+        {
+          "operation": "ADD",
+          "expected_memory_id": null
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User prefers to write down things in their own words while learning.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_010",
+            "memory_008",
+            "memory_012",
+            "memory_007",
+            "memory_006"
+          ],
+          "resolution_result": {
+            "operation": "ADD",
+            "target_memory_id": null
+          }
+        }
+      ]
+    },
+    "case_006": {
+      "conversation": [
+        "I keep wanting to start another project whenever I get stuck on one",
+        "but then I end up with a bunch of half finished stuff",
+        "yeah finishing the current one probably makes more sense",
+        "yeah",
+        "I'll try doing that instead of jumping to something new"
+      ],
+      "expected_memories": [
+        {
+          "operation": "ADD",
+          "expected_memory_id": null
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User prefers to finish the current project instead of jumping to something new.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_004",
+            "memory_009",
+            "memory_003",
+            "memory_008",
+            "memory_001"
+          ],
+          "resolution_result": {
+            "operation": "ADD",
+            "target_memory_id": null
+          }
+        }
+      ]
+    },
+    "case_007": {
+      "conversation": [
+        "should I learn kubernetes after docker?",
+        "I'm not trying to go into devops though",
+        "I want to be able to deploy my own apps properly",
+        "yeah",
+        "so I should focus on deployment stuff"
+      ],
+      "expected_memories": [
+        {
+          "operation": "NOOP",
+          "expected_memory_id": null
+        },
+        {
+          "operation": "ADD",
+          "expected_memory_id": null
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User prefers not to go into devops.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_014",
+            "memory_003",
+            "memory_004",
+            "memory_009",
+            "memory_002"
+          ],
+          "resolution_result": {
+            "operation": "ADD",
+            "target_memory_id": null
+          }
+        },
+        {
+          "memory": "User's goal is to be able to deploy my own apps properly.",
+          "type": "goal",
+          "retrieval_result": [
+            "memory_014",
+            "memory_013",
+            "memory_015",
+            "memory_003",
+            "memory_002"
+          ],
+          "resolution_result": {
+            "operation": "ADD",
+            "target_memory_id": null
+          }
+        }
+      ]
+    },
+    "case_008": {
+      "conversation": [
+        "random but I just moved to berlin last month",
+        "still figuring out the timezone thing for work calls lol",
+        "anyway back to the code",
+        "same error as before",
+        "oh wait its already fixed"
+      ],
+      "expected_memories": [
+        {
+          "operation": "ADD",
+          "expected_memory_id": null
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User moved to Berlin last month.",
+          "type": "fact",
+          "retrieval_result": [
+            "memory_006",
+            "memory_002",
+            "memory_015",
+            "memory_010",
+            "memory_011"
+          ],
+          "resolution_result": {
+            "operation": "ADD",
+            "target_memory_id": null
+          }
+        }
+      ]
+    },
+    "case_009": {
+      "conversation": [
+        "I'm going to move the chatbot back to sqlite",
+        "postgres was useful but it's honestly more setup than I need",
+        "yup",
+        "I don't really need a separate database running for it",
+        "yeah sqlite is probably enough for this one"
+      ],
+      "expected_memories": [
+        {
+          "operation": "UPDATE",
+          "expected_memory_id": "memory_002"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User prefers to use sqlite for the chatbot instead of postgres.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_002",
+            "memory_006",
+            "memory_007",
+            "memory_014",
+            "memory_013"
+          ],
+          "resolution_result": {
+            "operation": "UPDATE",
+            "target_memory_id": "memory_002"
+          }
+        }
+      ]
+    },
+    "case_010": {
+      "conversation": [
+        "I'm actually moving my deep learning stuff over to tensorflow instead of pytorch",
+        "I've been using pytorch for a while",
+        "but I'm finding tensorflow easier for the projects I'm doing now",
+        "so I don't think I'll be using pytorch for these anymore",
+        "I'll stick with tensorflow going forward"
+      ],
+      "expected_memories": [
+        {
+          "operation": "UPDATE",
+          "expected_memory_id": "memory_005"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User prefers to use TensorFlow over PyTorch for deep learning work going forward.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_005",
+            "memory_013",
+            "memory_003",
+            "memory_007",
+            "memory_012"
+          ],
+          "resolution_result": {
+            "operation": "UPDATE",
+            "target_memory_id": "memory_005"
+          }
+        }
+      ]
+    },
+    "case_011": {
+      "conversation": [
+        "actually I don't want just one solution anymore",
+        "when I'm stuck I want to see a couple different ways to approach it",
+        "sometimes the first solution isn't really the best fit",
+        "I'd rather compare them before deciding",
+        "so yeah give me a few options when there's a real tradeoff"
+      ],
+      "expected_memories": [
+        {
+          "operation": "UPDATE",
+          "expected_memory_id": "memory_004"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User prefers the assistant to provide multiple solutions when there is a real tradeoff.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_004",
+            "memory_008",
+            "memory_003",
+            "memory_001",
+            "memory_013"
+          ],
+          "resolution_result": {
+            "operation": "UPDATE",
+            "target_memory_id": "memory_004"
+          }
+        }
+      ]
+    },
+    "case_012": {
+      "conversation": [
+        "I used to prefer practical explanations but I'm trying to understand the theory properly now",
+        "especially for the ML stuff",
+        "just showing me how to use something isn't enough anymore",
+        "I want to know why it works too",
+        "so don't skip the theory when you explain these things"
+      ],
+      "expected_memories": [
+        {
+          "operation": "UPDATE",
+          "expected_memory_id": "memory_001"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User prefers explanations that include theory and reasoning.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_008",
+            "memory_001",
+            "memory_004",
+            "memory_003",
+            "memory_010"
+          ],
+          "resolution_result": {
+            "operation": "UPDATE",
+            "target_memory_id": "memory_001"
+          }
+        }
+      ]
+    },
+    "case_013": {
+      "conversation": [
+        "I was thinking about learning fastapi after this",
+        "but honestly I don't think I'm going to bother with it",
+        "there's already too much stuff on my list",
+        "I don't see myself getting to it",
+        "yeah I'm just dropping that one"
+      ],
+      "expected_memories": [
+        {
+          "operation": "DELETE",
+          "expected_memory_id": "memory_012"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User decided to drop learning fastapi.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_012",
+            "memory_013",
+            "memory_010",
+            "memory_005",
+            "memory_007"
+          ],
+          "resolution_result": {
+            "operation": "DELETE",
+            "target_memory_id": "memory_012"
+          }
+        }
+      ]
+    },
+    "case_014": {
+      "conversation": [
+        "I don't think I'm going to keep learning langchain or langgraph",
+        "I got what I needed from both for now",
+        "there's not much reason for me to keep studying them",
+        "I was going to go further with them but I've changed my mind",
+        "so I'm leaving both alone"
+      ],
+      "expected_memories": [
+        {
+          "operation": "DELETE",
+          "expected_memory_id": "memory_010"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User prefers not to continue learning langchain or langgraph.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_010",
+            "memory_006",
+            "memory_012",
+            "memory_008",
+            "memory_004"
+          ],
+          "resolution_result": {
+            "operation": "UPDATE",
+            "target_memory_id": "memory_010"
+          }
+        }
+      ]
+    },
+    "case_015": {
+      "conversation": [
+        "I was going to spend some time on llm evals",
+        "I've dropped that thing",
+        "its too much",
+        "I don't think I'm going to work on evals after all",
+        "yeah, I'm not interested anymore."
+      ],
+      "expected_memories": [
+        {
+          "operation": "DELETE",
+          "expected_memory_id": "memory_011"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User is not interested in working on LLM evals.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_011",
+            "memory_009",
+            "memory_008",
+            "memory_003",
+            "memory_004"
+          ],
+          "resolution_result": {
+            "operation": "UPDATE",
+            "target_memory_id": "memory_011"
+          }
+        }
+      ]
+    },
+    "case_016": {
+      "conversation": [
+        "I was planning to add long term memory to the chatbot",
+        "but I don't think I'm going to do that now",
+        "it's making the whole thing more complicated than I want",
+        "I think I'll leave the chatbot without it",
+        "yeah"
+      ],
+      "expected_memories": [
+        {
+          "operation": "UPDATE",
+          "expected_memory_id": "memory_007"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User prefers the chatbot to not have long-term memory.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_007",
+            "memory_002",
+            "memory_006",
+            "memory_013",
+            "memory_015"
+          ],
+          "resolution_result": {
+            "operation": "UPDATE",
+            "target_memory_id": "memory_007"
+          }
+        }
+      ]
+    },
+    "case_017": {
+      "conversation": [
+        "I'm training another deep learning model",
+        "I'll probably do it in PyTorch again",
+        "I've been using PyTorch for most of these projects",
+        "yeah, let's do it"
+      ],
+      "expected_memories": [
+        {
+          "operation": "NOOP",
+          "expected_memory_id": "memory_005"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User prefers to use PyTorch for deep learning models and has used PyTorch for most of their projects.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_005",
+            "memory_013",
+            "memory_003",
+            "memory_012",
+            "memory_007"
+          ],
+          "resolution_result": {
+            "operation": "NOOP",
+            "target_memory_id": "memory_005"
+          }
+        }
+      ]
+    },
+    "case_018": {
+      "conversation": [
+        "I'm trying to understand this new topic - NDCG",
+        "the textbook explanation is way too theoretical for me",
+        "can you explain what's actually happening",
+        "yeah, that makes sense",
+        "I usually understand things better when they're practical"
+      ],
+      "expected_memories": [
+        {
+          "operation": "NOOP",
+          "expected_memory_id": "memory_001"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User prefers practical explanations.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_001",
+            "memory_008",
+            "memory_004",
+            "memory_012",
+            "memory_009"
+          ],
+          "resolution_result": {
+            "operation": "NOOP",
+            "target_memory_id": "memory_001"
+          }
+        }
+      ]
+    },
+    "case_019": {
+      "conversation": [
+        "I checked the chatbot database setup again",
+        "it is running on Postgres",
+        "I thought about changing it earlier",
+        "but there's no real reason to do that right now",
+        "so I'm keeping PostgreSQL for the chatbot"
+      ],
+      "expected_memories": [
+        {
+          "operation": "NOOP",
+          "expected_memory_id": "memory_002"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User's chatbot database is PostgreSQL.",
+          "type": "fact",
+          "retrieval_result": [
+            "memory_002",
+            "memory_006",
+            "memory_007",
+            "memory_013",
+            "memory_003"
+          ],
+          "resolution_result": {
+            "operation": "NOOP",
+            "target_memory_id": "memory_002"
+          }
+        }
+      ]
+    },
+    "case_020": {
+      "conversation": [
+        "I understand what you're saying but I'm still not really getting it",
+        "can you show me how that actually works",
+        "i finally understand",
+        "I think seeing a example with explanations helps me connect the idea",
+        "yeah"
+      ],
+      "expected_memories": [
+        {
+          "operation": "NOOP",
+          "expected_memory_id": "memory_008"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User prefers examples with explanations to help connect ideas.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_008",
+            "memory_001",
+            "memory_004",
+            "memory_010",
+            "memory_003"
+          ],
+          "resolution_result": {
+            "operation": "NOOP",
+            "target_memory_id": "memory_008"
+          }
+        }
+      ]
+    }
+  },
+  "explicit": {
+    "case_001": {
+      "conversation": [
+        "remember that I like to keep my projects simple"
+      ],
+      "expected_memories": [
+        {
+          "operation": "ADD",
+          "expected_memory_id": null
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User prefers to keep projects simple.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_004",
+            "memory_008",
+            "memory_001",
+            "memory_003",
+            "memory_009"
+          ],
+          "resolution_result": {
+            "operation": "ADD",
+            "target_memory_id": null
+          }
+        }
+      ]
+    },
+    "case_002": {
+      "conversation": [
+        "remember that I usually write down things in my own words when I'm learning"
+      ],
+      "expected_memories": [
+        {
+          "operation": "ADD",
+          "expected_memory_id": null
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User prefers to write down things in their own words when learning.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_010",
+            "memory_008",
+            "memory_012",
+            "memory_001",
+            "memory_006"
+          ],
+          "resolution_result": {
+            "operation": "ADD",
+            "target_memory_id": null
+          }
+        }
+      ]
+    },
+    "case_003": {
+      "conversation": [
+        "remember that I prefer working on existing projects instead of constantly starting new ones"
+      ],
+      "expected_memories": [
+        {
+          "operation": "ADD",
+          "expected_memory_id": null
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User prefers working on existing projects instead of constantly starting new ones.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_004",
+            "memory_003",
+            "memory_014",
+            "memory_008",
+            "memory_009"
+          ],
+          "resolution_result": {
+            "operation": "ADD",
+            "target_memory_id": null
+          }
+        }
+      ]
+    },
+    "case_004": {
+      "conversation": [
+        "remember that I'm focusing on deployment skills for my AI projects"
+      ],
+      "expected_memories": [
+        {
+          "operation": "ADD",
+          "expected_memory_id": null
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User's goal is to focus on deployment skills for AI projects.",
+          "type": "goal",
+          "retrieval_result": [
+            "memory_003",
+            "memory_013",
+            "memory_005",
+            "memory_012",
+            "memory_006"
+          ],
+          "resolution_result": {
+            "operation": "ADD",
+            "target_memory_id": null
+          }
+        }
+      ]
+    },
+    "case_005": {
+      "conversation": [
+        "remember that I've switched the chatbot from postgres to sqlite"
+      ],
+      "expected_memories": [
+        {
+          "operation": "UPDATE",
+          "expected_memory_id": "memory_002"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User has switched the chatbot from postgres to sqlite.",
+          "type": "fact",
+          "retrieval_result": [
+            "memory_002",
+            "memory_006",
+            "memory_007",
+            "memory_013",
+            "memory_015"
+          ],
+          "resolution_result": {
+            "operation": "UPDATE",
+            "target_memory_id": "memory_002"
+          }
+        }
+      ]
+    },
+    "case_006": {
+      "conversation": [
+        "remember that I'm using tensorflow for my deep learning work from now on"
+      ],
+      "expected_memories": [
+        {
+          "operation": "UPDATE",
+          "expected_memory_id": "memory_005"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User prefers to use TensorFlow for deep learning work from now on.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_005",
+            "memory_013",
+            "memory_003",
+            "memory_012",
+            "memory_007"
+          ],
+          "resolution_result": {
+            "operation": "UPDATE",
+            "target_memory_id": "memory_005"
+          }
+        }
+      ]
+    },
+    "case_007": {
+      "conversation": [
+        "remember that I want to see a few approaches when there's an actual tradeoff"
+      ],
+      "expected_memories": [
+        {
+          "operation": "UPDATE",
+          "expected_memory_id": "memory_004"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User prefers to see a few approaches when there's an actual tradeoff.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_008",
+            "memory_001",
+            "memory_004",
+            "memory_011",
+            "memory_014"
+          ],
+          "resolution_result": {
+            "operation": "UPDATE",
+            "target_memory_id": "memory_004"
+          }
+        }
+      ]
+    },
+    "case_008": {
+      "conversation": [
+        "remember that I want explanations to include the theory as well as the practical side"
+      ],
+      "expected_memories": [
+        {
+          "operation": "UPDATE",
+          "expected_memory_id": "memory_001"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User wants explanations to include theory as well as the practical side.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_001",
+            "memory_008",
+            "memory_003",
+            "memory_005",
+            "memory_011"
+          ],
+          "resolution_result": {
+            "operation": "UPDATE",
+            "target_memory_id": "memory_001"
+          }
+        }
+      ]
+    },
+    "case_009": {
+      "conversation": [
+        "remember that I use postgres for my chatbot"
+      ],
+      "expected_memories": [
+        {
+          "operation": "NOOP",
+          "expected_memory_id": "memory_002"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User uses postgres for their chatbot.",
+          "type": "fact",
+          "retrieval_result": [
+            "memory_002",
+            "memory_006",
+            "memory_007",
+            "memory_013",
+            "memory_015"
+          ],
+          "resolution_result": {
+            "operation": "NOOP",
+            "target_memory_id": "memory_002"
+          }
+        }
+      ]
+    },
+    "case_010": {
+      "conversation": [
+        "remember that I'm already using pytorch for my deep learning projects"
+      ],
+      "expected_memories": [
+        {
+          "operation": "NOOP",
+          "expected_memory_id": "memory_005"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User is already using pytorch for deep learning projects.",
+          "type": "fact",
+          "retrieval_result": [
+            "memory_005",
+            "memory_013",
+            "memory_003",
+            "memory_012",
+            "memory_006"
+          ],
+          "resolution_result": {
+            "operation": "NOOP",
+            "target_memory_id": "memory_005"
+          }
+        }
+      ]
+    },
+    "case_011": {
+      "conversation": [
+        "remember that I'm building the chatbot with langgraph"
+      ],
+      "expected_memories": [
+        {
+          "operation": "NOOP",
+          "expected_memory_id": "memory_006"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User is building a chatbot with langgraph.",
+          "type": "project",
+          "retrieval_result": [
+            "memory_006",
+            "memory_010",
+            "memory_007",
+            "memory_002",
+            "memory_013"
+          ],
+          "resolution_result": {
+            "operation": "NOOP",
+            "target_memory_id": "memory_006"
+          }
+        }
+      ]
+    },
+    "case_012": {
+      "conversation": [
+        "remember that I use streamlit for my AI apps"
+      ],
+      "expected_memories": [
+        {
+          "operation": "NOOP",
+          "expected_memory_id": "memory_013"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User uses streamlit for AI apps.",
+          "type": "fact",
+          "retrieval_result": [
+            "memory_013",
+            "memory_003",
+            "memory_007",
+            "memory_005",
+            "memory_012"
+          ],
+          "resolution_result": {
+            "operation": "NOOP",
+            "target_memory_id": "memory_013"
+          }
+        }
+      ]
+    },
+    "case_013": {
+      "conversation": [
+        "remember that I don't want to use postgres for the chatbot anymore"
+      ],
+      "expected_memories": [
+        {
+          "operation": "DELETE",
+          "expected_memory_id": "memory_002"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User does not want to use postgres for the chatbot anymore.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_002",
+            "memory_006",
+            "memory_007",
+            "memory_013",
+            "memory_015"
+          ],
+          "resolution_result": {
+            "operation": "DELETE",
+            "target_memory_id": "memory_002"
+          }
+        }
+      ]
+    },
+    "case_014": {
+      "conversation": [
+        "remember that I'm not learning fastapi anymore"
+      ],
+      "expected_memories": [
+        {
+          "operation": "DELETE",
+          "expected_memory_id": "memory_012"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User is not learning fastapi anymore.",
+          "type": "fact",
+          "retrieval_result": [
+            "memory_012",
+            "memory_013",
+            "memory_007",
+            "memory_010",
+            "memory_005"
+          ],
+          "resolution_result": {
+            "operation": "DELETE",
+            "target_memory_id": "memory_012"
+          }
+        }
+      ]
+    },
+    "case_015": {
+      "conversation": [
+        "remember that I'm no longer interested in llm evaluation"
+      ],
+      "expected_memories": [
+        {
+          "operation": "DELETE",
+          "expected_memory_id": "memory_011"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User is no longer interested in LLM evaluation.",
+          "type": "preference",
+          "retrieval_result": [
+            "memory_011",
+            "memory_004",
+            "memory_007",
+            "memory_009",
+            "memory_003"
+          ],
+          "resolution_result": {
+            "operation": "DELETE",
+            "target_memory_id": "memory_011"
+          }
+        }
+      ]
+    },
+    "case_016": {
+      "conversation": [
+        "remember that I stopped learning langchain and langgraph"
+      ],
+      "expected_memories": [
+        {
+          "operation": "DELETE",
+          "expected_memory_id": "memory_010"
+        }
+      ],
+      "extraction_result": [
+        {
+          "memory": "User stopped learning langchain and langgraph.",
+          "type": "fact",
+          "retrieval_result": [
+            "memory_010",
+            "memory_006",
+            "memory_012",
+            "memory_007",
+            "memory_005"
+          ],
+          "resolution_result": {
+            "operation": "DELETE",
+            "target_memory_id": "memory_010"
+          }
+        }
+      ]
+    },
+    "case_017": {
+      "conversation": [
+        "remember that I'm working on this bug today"
+      ],
+      "expected_memories": []
+    },
+    "case_018": {
+      "conversation": [
+        "I'm using this approach for now, remember that"
+      ],
+      "expected_memories": []
+    },
+    "case_019": {
+      "conversation": [
+        "do you remember the bug we were fixing yestarday"
+      ],
+      "expected_memories": []
+    },
+    "case_020": {
+      "conversation": [
+        "I remember having this problem but i can't be able to remeber it"
+      ],
+      "expected_memories": []
+    }
+  }
+}

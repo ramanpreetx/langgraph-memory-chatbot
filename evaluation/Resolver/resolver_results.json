@@ -1,0 +1,190 @@
+{
+    "total_cases": 20,
+    "correct": 20,
+    "accuracy": 1.0,
+    "results": [
+        {
+            "case_id": "case_001",
+            "expected_action": "ADD",
+            "actual_action": "ADD",
+            "expected_memory_id": null,
+            "actual_memory_id": null,
+            "correct": true,
+            "justification": "The candidate introduces a new fact about the user that is not represented in existing memories."
+        },
+        {
+            "case_id": "case_002",
+            "expected_action": "ADD",
+            "actual_action": "ADD",
+            "expected_memory_id": null,
+            "actual_memory_id": null,
+            "correct": true,
+            "justification": "The candidate states that the user is learning Docker, which is not represented in any existing memory. It is a new durable fact about the user's learning activities."
+        },
+        {
+            "case_id": "case_003",
+            "expected_action": "ADD",
+            "actual_action": "ADD",
+            "expected_memory_id": null,
+            "actual_memory_id": null,
+            "correct": true,
+            "justification": "The candidate states a new interest in deploying AI applications, which is not represented by existing memories."
+        },
+        {
+            "case_id": "case_004",
+            "expected_action": "ADD",
+            "actual_action": "ADD",
+            "expected_memory_id": null,
+            "actual_memory_id": null,
+            "correct": true,
+            "justification": "The candidate introduces a new, specific learning goal\u2014model serving and deployment\u2014that is not explicitly captured by the existing memory stating a general desire to learn useful AI engineering work. This is genuinely new information and should be stored as a new memory."
+        },
+        {
+            "case_id": "case_005",
+            "expected_action": "ADD",
+            "actual_action": "ADD",
+            "expected_memory_id": null,
+            "actual_memory_id": null,
+            "correct": true,
+            "justification": "The candidate states a new interest in improving Python skills, which is not represented in existing memories."
+        },
+        {
+            "case_id": "case_006",
+            "expected_action": "NOOP",
+            "actual_action": "NOOP",
+            "expected_memory_id": "memory_014",
+            "actual_memory_id": "memory_014",
+            "correct": true,
+            "justification": "The candidate statement is already represented by existing memory memory_014, which states that the user prefers practical over theoretical explanations."
+        },
+        {
+            "case_id": "case_007",
+            "expected_action": "NOOP",
+            "actual_action": "NOOP",
+            "expected_memory_id": [
+                "memory_015",
+                "memory_007"
+            ],
+            "actual_memory_id": "memory_007",
+            "correct": true,
+            "justification": "Candidate is a duplicate of existing memory  memory_007."
+        },
+        {
+            "case_id": "case_008",
+            "expected_action": "NOOP",
+            "actual_action": "NOOP",
+            "expected_memory_id": "memory_018",
+            "actual_memory_id": "memory_018",
+            "correct": true,
+            "justification": "The candidate statement is identical to existing memory memory_018, so no change is needed."
+        },
+        {
+            "case_id": "case_009",
+            "expected_action": "NOOP",
+            "actual_action": "NOOP",
+            "expected_memory_id": "memory_013",
+            "actual_memory_id": "memory_013",
+            "correct": true,
+            "justification": "The candidate memory is identical to existing memory_013, so no change is needed."
+        },
+        {
+            "case_id": "case_010",
+            "expected_action": "NOOP",
+            "actual_action": "NOOP",
+            "expected_memory_id": "memory_021",
+            "actual_memory_id": "memory_021",
+            "correct": true,
+            "justification": "The candidate statement is identical to existing memory_021, so no change is needed."
+        },
+        {
+            "case_id": "case_011",
+            "expected_action": "UPDATE",
+            "actual_action": "UPDATE",
+            "expected_memory_id": "memory_101",
+            "actual_memory_id": "memory_101",
+            "correct": true,
+            "justification": "The candidate states that the user is using PostgreSQL for the chatbot, which contradicts the existing memory that the user is using SQLite. The candidate provides a new durable fact about the user's database choice, so the existing memory should be updated."
+        },
+        {
+            "case_id": "case_012",
+            "expected_action": "UPDATE",
+            "actual_action": "UPDATE",
+            "expected_memory_id": "memory_025",
+            "actual_memory_id": "memory_025",
+            "correct": true,
+            "justification": "Candidate provides a new durable preference that replaces the existing preference for TensorFlow."
+        },
+        {
+            "case_id": "case_013",
+            "expected_action": "UPDATE",
+            "actual_action": "UPDATE",
+            "expected_memory_id": "memory_029",
+            "actual_memory_id": "memory_029",
+            "correct": true,
+            "justification": "The candidate indicates a change from seeking AI/ML internships to seeking an AI engineering job, which updates the existing memory about the user's job search focus."
+        },
+        {
+            "case_id": "case_014",
+            "expected_action": "UPDATE",
+            "actual_action": "UPDATE",
+            "expected_memory_id": "memory_110",
+            "actual_memory_id": "memory_110",
+            "correct": true,
+            "justification": "The candidate provides a more specific location for the existing memory that the user lives in India, so the existing memory should be updated to reflect the new durable fact."
+        },
+        {
+            "case_id": "case_015",
+            "expected_action": "UPDATE",
+            "actual_action": "UPDATE",
+            "expected_memory_id": "memory_002",
+            "actual_memory_id": "memory_002",
+            "correct": true,
+            "justification": "Candidate provides a new durable value for the user name, replacing the existing memory."
+        },
+        {
+            "case_id": "case_016",
+            "expected_action": "DELETE",
+            "actual_action": "DELETE",
+            "expected_memory_id": "memory_020",
+            "actual_memory_id": "memory_020",
+            "correct": true,
+            "justification": "The candidate states that the user has cancelled their driving lessons, which invalidates the existing memory that the user is taking driving lessons. No new durable value is provided, so the memory should be deleted."
+        },
+        {
+            "case_id": "case_017",
+            "expected_action": "DELETE",
+            "actual_action": "DELETE",
+            "expected_memory_id": "memory_022",
+            "actual_memory_id": "memory_022",
+            "correct": true,
+            "justification": "Candidate indicates the user no longer studies MCP, which invalidates the existing memory that the user is learning MCP."
+        },
+        {
+            "case_id": "case_018",
+            "expected_action": "DELETE",
+            "actual_action": "DELETE",
+            "expected_memory_id": "memory_019",
+            "actual_memory_id": "memory_019",
+            "correct": true,
+            "justification": "The candidate states that the user cancelled their music subscription, which directly contradicts the existing memory that the user has a music streaming subscription. No new durable value is provided, so the existing memory should be removed."
+        },
+        {
+            "case_id": "case_019",
+            "expected_action": "DELETE",
+            "actual_action": "DELETE",
+            "expected_memory_id": "memory_018",
+            "actual_memory_id": "memory_018",
+            "correct": true,
+            "justification": "The candidate states that the user has stopped playing football, which invalidates the existing memory that the user plays football regularly. No new durable value is provided, so the memory should be deleted."
+        },
+        {
+            "case_id": "case_020",
+            "expected_action": "DELETE",
+            "actual_action": "DELETE",
+            "expected_memory_id": "memory_019",
+            "actual_memory_id": "memory_019",
+            "correct": true,
+            "justification": "The candidate states that the user is no longer working at the restaurant, which invalidates the existing memory that the user works at a restaurant."
+        }
+    ]
+}

@@ -1,0 +1,285 @@
+{
+  "case_001": {
+    "conversation": [
+      "can you explain backprop",
+      "less math more just how it actually works",
+      "yeah that's way better",
+      "now explain the whole derivation thing",
+      "cool that makes sense now"
+    ],
+    "expected_memories": []
+  },
+  "case_002": {
+    "conversation": [
+      "how should I structure this function  def process_messages(messages): if not messages: return results = [] for message in messages: if message.type == 'human': result = extract_memory(message.content) if result: results.append(result) save_memories(results) return results",
+      "there's a few ways to do it huh",
+      "just pick one, I don't need the whole list",
+      "yeah that's what I want",
+      "nice thanks"
+    ],
+    "expected_memories": []
+  },
+  "case_003": {
+    "conversation": [
+      "what's a decorator in python",
+      "ok but can you show me one",
+      "just make it click for me way more",
+      "gotcha that helps",
+      "got another example of that maybe"
+    ],
+    "expected_memories": []
+  },
+  "case_004": {
+    "conversation": [
+      "I'm using streamlit for this one",
+      "I want a separate page",
+      "can streamlit handle that",
+      "oh nice I didn't know it could do that",
+      "yeah I'll keep it in streamlit"
+    ],
+    "expected_memories": []
+  },
+  "case_005": {
+    "conversation": [
+      "do you think I should keep notes while learning something or is that a waste of time",
+      "I never remember half the stuff I read anyway",
+      "I've started writing down things in my own words instead",
+      "takes a little longer but I actually remember it later",
+      "probably gonna keep doing that"
+    ],
+    "expected_memories": [
+      {
+        "operation": "ADD",
+        "expected_memory_id": null
+      }
+    ]
+  },
+  "case_006": {
+    "conversation": [
+      "I keep wanting to start another project whenever I get stuck on one",
+      "but then I end up with a bunch of half finished stuff",
+      "yeah finishing the current one probably makes more sense",
+      "yeah",
+      "I'll try doing that instead of jumping to something new"
+    ],
+    "expected_memories": [
+      {
+        "operation": "ADD",
+        "expected_memory_id": null
+      }
+    ]
+  },
+  "case_007": {
+    "conversation": [
+      "should I learn kubernetes after docker?",
+      "I'm not trying to go into devops though",
+      "I want to be able to deploy my own apps properly",
+      "yeah",
+      "so I should focus on deployment stuff"
+    ],
+    "expected_memories": [
+      {
+        "operation": "NOOP",
+        "expected_memory_id": null
+      },
+      {
+        "operation": "ADD",
+        "expected_memory_id": null
+      }
+    ]
+  },
+  "case_008": {
+    "conversation": [
+      "random but I just moved to berlin last month",
+      "still figuring out the timezone thing for work calls lol",
+      "anyway back to the code",
+      "same error as before",
+      "oh wait its already fixed"
+    ],
+    "expected_memories": [
+      {
+        "operation": "ADD",
+        "expected_memory_id": null
+      }
+    ]
+  },
+  "case_009": {
+    "conversation": [
+      "I'm going to move the chatbot back to sqlite",
+      "postgres was useful but it's honestly more setup than I need",
+      "yup",
+      "I don't really need a separate database running for it",
+      "yeah sqlite is probably enough for this one"
+    ],
+    "expected_memories": [
+      {
+        "operation": "UPDATE",
+        "expected_memory_id": "memory_002"
+      }
+    ]
+  },
+  "case_010": {
+    "conversation": [
+      "I'm actually moving my deep learning stuff over to tensorflow instead of pytorch",
+      "I've been using pytorch for a while",
+      "but I'm finding tensorflow easier for the projects I'm doing now",
+      "so I don't think I'll be using pytorch for these anymore",
+      "I'll stick with tensorflow going forward"
+    ],
+    "expected_memories": [
+      {
+        "operation": "UPDATE",
+        "expected_memory_id": "memory_005"
+      }
+    ]
+  },
+  "case_011": {
+    "conversation": [
+      "actually I don't want just one solution anymore",
+      "when I'm stuck I want to see a couple different ways to approach it",
+      "sometimes the first solution isn't really the best fit",
+      "I'd rather compare them before deciding",
+      "so yeah give me a few options when there's a real tradeoff"
+    ],
+    "expected_memories": [
+      {
+        "operation": "UPDATE",
+        "expected_memory_id": "memory_004"
+      }
+    ]
+  },
+  "case_012": {
+    "conversation": [
+      "I used to prefer practical explanations but I'm trying to understand the theory properly now",
+      "especially for the ML stuff",
+      "just showing me how to use something isn't enough anymore",
+      "I want to know why it works too",
+      "so don't skip the theory when you explain these things"
+    ],
+    "expected_memories": [
+      {
+        "operation": "UPDATE",
+        "expected_memory_id": "memory_001"
+      }
+    ]
+  },
+  "case_013": {
+    "conversation": [
+      "I was thinking about learning fastapi after this",
+      "but honestly I don't think I'm going to bother with it",
+      "there's already too much stuff on my list",
+      "I don't see myself getting to it",
+      "yeah I'm just dropping that one"
+    ],
+    "expected_memories": [
+      {
+        "operation": "DELETE",
+        "expected_memory_id": "memory_012"
+      }
+    ]
+  },
+  "case_014": {
+    "conversation": [
+      "I don't think I'm going to keep learning langchain or langgraph",
+      "I got what I needed from both for now",
+      "there's not much reason for me to keep studying them",
+      "I was going to go further with them but I've changed my mind",
+      "so I'm leaving both alone"
+    ],
+    "expected_memories": [
+      {
+        "operation": "DELETE",
+        "expected_memory_id": "memory_010"
+      }
+    ]
+  },
+  "case_015": {
+    "conversation": [
+      "I was going to spend some time on llm evals",
+      "I've dropped that thing",
+      "its too much",
+      "I don't think I'm going to work on evals after all",
+      "yeah, I'm not interested anymore."
+    ],
+    "expected_memories": [
+      {
+        "operation": "DELETE",
+        "expected_memory_id": "memory_011"
+      }
+    ]
+  },
+  "case_016": {
+    "conversation": [
+      "I was planning to add long term memory to the chatbot",
+      "but I don't think I'm going to do that now",
+      "it's making the whole thing more complicated than I want",
+      "I think I'll leave the chatbot without it",
+      "yeah"
+    ],
+    "expected_memories": [
+      {
+        "operation": "UPDATE",
+        "expected_memory_id": "memory_007"
+      }
+    ]
+  },
+  "case_017": {
+    "conversation": [
+      "I'm training another deep learning model",
+      "I'll probably do it in PyTorch again",
+      "I've been using PyTorch for most of these projects",
+      "yeah, let's do it"
+    ],
+    "expected_memories": [
+      {
+        "operation": "NOOP",
+        "expected_memory_id": "memory_005"
+      }
+    ]
+  },
+  "case_018": {
+    "conversation": [
+      "I'm trying to understand this new topic - NDCG",
+      "the textbook explanation is way too theoretical for me",
+      "can you explain what's actually happening",
+      "yeah, that makes sense",
+      "I usually understand things better when they're practical"
+    ],
+    "expected_memories": [
+      {
+        "operation": "NOOP",
+        "expected_memory_id": "memory_001"
+      }
+    ]
+  },
+  "case_019": {
+    "conversation": [
+      "I checked the chatbot database setup again",
+      "it is running on Postgres",
+      "I thought about changing it earlier",
+      "but there's no real reason to do that right now",
+      "so I'm keeping PostgreSQL for the chatbot"
+    ],
+    "expected_memories": [
+      {
+        "operation": "NOOP",
+        "expected_memory_id": "memory_002"
+      }
+    ]
+  },
+  "case_020": {
+    "conversation": [
+      "I understand what you're saying but I'm still not really getting it",
+      "can you show me how that actually works",
+      "i finally understand",
+      "I think seeing a example with explanations helps me connect the idea",
+      "yeah"
+    ],
+    "expected_memories": [
+      {
+        "operation": "NOOP",
+        "expected_memory_id": "memory_008"
+      }
+    ]
+  }
+}

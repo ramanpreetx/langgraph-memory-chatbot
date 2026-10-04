@@ -1,0 +1,77 @@
+[
+    {
+        "id": "memory_001",
+        "text": "User prefers practical over theoretical explanations.",
+        "type": "preference"
+    },
+    {
+        "id": "memory_002",
+        "text": "User uses PostgreSQL for their chatbot.",
+        "type": "project"
+    },
+    {
+        "id": "memory_003",
+        "text": "User wants an AI engineering job.",
+        "type": "goal"
+    },
+    {
+        "id": "memory_004",
+        "text": "User prefers one clear solution over multiple alternatives.",
+        "type": "preference"
+    },
+    {
+        "id": "memory_005",
+        "text": "User uses PyTorch for deep learning projects.",
+        "type": "project"
+    },
+    {
+        "id": "memory_006",
+        "text": "User is building a LangGraph chatbot.",
+        "type": "project"
+    },
+    {
+        "id": "memory_007",
+        "text": "User is implementing long-term memory in their chatbot.",
+        "type": "project"
+    },
+    {
+        "id": "memory_008",
+        "text": "User prefers explanations with examples.",
+        "type": "preference"
+    },
+    {
+        "id": "memory_009",
+        "text": "User wants exact changes when debugging code.",
+        "type": "preference"
+    },
+    {
+        "id": "memory_010",
+        "text": "User is learning LangChain and LangGraph.",
+        "type": "goal"
+    },
+    {
+        "id": "memory_011",
+        "text": "User is interested in LLM evaluation.",
+        "type": "goal"
+    },
+    {
+        "id": "memory_012",
+        "text": "User wants to learn FastAPI.",
+        "type": "goal"
+    },
+    {
+        "id": "memory_013",
+        "text": "User uses Streamlit for AI applications.",
+        "type": "fact"
+    },
+    {
+        "id": "memory_014",
+        "text": "User has experience with Docker.",
+        "type": "fact"
+    },
+    {
+        "id": "memory_015",
+        "text": "User uses a Lenovo laptop.",
+        "type": "fact"
+    }
+]

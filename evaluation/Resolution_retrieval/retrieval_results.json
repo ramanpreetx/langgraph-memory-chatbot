@@ -1,0 +1,202 @@
+{
+    "candidate_001": {
+        "candidate": "user is building a chatbot with memory",
+        "expected": [
+            "memory_001"
+        ],
+        "retrieved": [
+            "memory_001",
+            "memory_002",
+            "memory_030",
+            "memory_011",
+            "memory_005"
+        ]
+    },
+    "candidate_002": {
+        "candidate": "user is running PostgreSQL database in Docker",
+        "expected": [
+            "memory_002"
+        ],
+        "retrieved": [
+            "memory_002",
+            "memory_027",
+            "memory_016",
+            "memory_012",
+            "memory_013"
+        ]
+    },
+    "candidate_003": {
+        "candidate": "user build a medical RAG project",
+        "expected": [
+            "memory_003"
+        ],
+        "retrieved": [
+            "memory_003",
+            "memory_030",
+            "memory_029",
+            "memory_024",
+            "memory_028"
+        ]
+    },
+    "candidate_004": {
+        "candidate": "user built a English French Transformer from scratch",
+        "expected": [
+            "memory_004"
+        ],
+        "retrieved": [
+            "memory_004",
+            "memory_022",
+            "memory_023",
+            "memory_001",
+            "memory_030"
+        ]
+    },
+    "candidate_005": {
+        "candidate": "user wants reasons before coding",
+        "expected": [
+            "memory_013"
+        ],
+        "retrieved": [
+            "memory_013",
+            "memory_018",
+            "memory_016",
+            "memory_021",
+            "memory_009"
+        ]
+    },
+    "candidate_006": {
+        "candidate": "user prefers practical explanations",
+        "expected": [
+            "memory_009",
+            "memory_014"
+        ],
+        "retrieved": [
+            "memory_014",
+            "memory_018",
+            "memory_021",
+            "memory_009",
+            "memory_006"
+        ]
+    },
+    "candidate_007": {
+        "candidate": "user doesn't want multiple approaches",
+        "expected": [
+            "memory_007",
+            "memory_015"
+        ],
+        "retrieved": [
+            "memory_015",
+            "memory_013",
+            "memory_007",
+            "memory_016",
+            "memory_018"
+        ]
+    },
+    "candidate_008": {
+        "candidate": "user prefers technical depth without too much theory",
+        "expected": [
+            "memory_017",
+            "memory_019"
+        ],
+        "retrieved": [
+            "memory_017",
+            "memory_014",
+            "memory_021",
+            "memory_009",
+            "memory_019"
+        ]
+    },
+    "candidate_009": {
+        "candidate": "user likes simple but technically detailed explanations",
+        "expected": [
+            "memory_021"
+        ],
+        "retrieved": [
+            "memory_021",
+            "memory_018",
+            "memory_020",
+            "memory_009",
+            "memory_006"
+        ]
+    },
+    "candidate_010": {
+        "candidate": "user likes examples when learning",
+        "expected": [
+            "memory_018"
+        ],
+        "retrieved": [
+            "memory_018",
+            "memory_020",
+            "memory_022",
+            "memory_006",
+            "memory_014"
+        ]
+    },
+    "candidate_011": {
+        "candidate": "user wants exact code changes when fixing errors",
+        "expected": [
+            "memory_027"
+        ],
+        "retrieved": [
+            "memory_027",
+            "memory_016",
+            "memory_013",
+            "memory_021",
+            "memory_006"
+        ]
+    },
+    "candidate_012": {
+        "candidate": "user considering FastAPI and MCP for their AI projects",
+        "expected": [
+            "memory_024",
+            "memory_025"
+        ],
+        "retrieved": [
+            "memory_024",
+            "memory_025",
+            "memory_029",
+            "memory_030",
+            "memory_005"
+        ]
+    },
+    "candidate_013": {
+        "candidate": "user is interested in evaluating LLM applications",
+        "expected": [
+            "memory_026"
+        ],
+        "retrieved": [
+            "memory_026",
+            "memory_028",
+            "memory_024",
+            "memory_012",
+            "memory_009"
+        ]
+    },
+    "candidate_014": {
+        "candidate": "user is looking for an AI ML internship",
+        "expected": [
+            "memory_029"
+        ],
+        "retrieved": [
+            "memory_029",
+            "memory_030",
+            "memory_028",
+            "memory_005",
+            "memory_025"
+        ]
+    },
+    "candidate_015": {
+        "candidate": "user is learning computer vision",
+        "expected": [],
+        "retrieved": [
+            "memory_005",
+            "memory_022",
+            "memory_011",
+            "memory_023",
+            "memory_028"
+        ]
+    },
+    "final": {
+        "recall_at_5": 1.0
+    }
+}

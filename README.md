@@ -96,7 +96,7 @@ Deleting is a soft delete. The record stays in PostgreSQL and only its `status` 
 
 ### Memory retrieval for replies
 
-In the `chat` node, the content of the latest message is used as the search query against the user's active memories, with `limit=5`. Results with a score below 0.25 are dropped, and the text of the rest goes into the prompt. If retrieval throws an error, it is logged and the reply is generated without memories.
+In the `chat` node, the content of the latest message is used as the search query against the user's active memories, with `limit=5`. Results with a score below 0.20 are dropped, and the text of the rest goes into the prompt. If retrieval throws an error, it is logged and the reply is generated without memories.
 
 The search is a similarity search over the `text` field of each memory:
 
